@@ -11,6 +11,9 @@ function generateGrid(size) {
             const grid = document.createElement('div');
             row.appendChild(grid);
             grid.addEventListener('mouseenter', () => {
+                const currentOpacity = grid.style.opacity;
+                grid.style.opacity = Number(currentOpacity) + 0.1;
+                console.log(currentOpacity);
                 const r = Math.random() * 255;
                 const g = Math.random() * 255;
                 const b = Math.random() * 255;
