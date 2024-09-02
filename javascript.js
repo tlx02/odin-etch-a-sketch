@@ -11,7 +11,7 @@ function generateGrid(size) {
             const grid = document.createElement('div');
             row.appendChild(grid);
             grid.addEventListener('mouseenter', () => {
-                grid.style.backgroundColor = "Blue";
+                grid.style.backgroundColor = "blue";
             })
         }
     }
